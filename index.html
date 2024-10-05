@@ -1,13 +1,192 @@
 <!DOCTYPE html>
-<html lang="en">
+<html data-theme="light" lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Food Cart</title>
+    <!-- custom css -->
+    <link rel="stylesheet" href="styles/style.css">
+
+    <!-- tailwind css -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- DaisyUI -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.12/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
 </head>
+
 <body>
-    <header>
-        
-    </header>
+    <main class="w-[90%] m-auto justify-around flex lg:flex-row flex-col lg:items-start items-center">
+        <!-- Dessert Items Listview -->
+        <section class="dessert-items">
+            <h2 class="red-hat-text-bold text-xl">Desserts</h2>
+            <div class="cards-section grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1">
+                <div class="card bg-base-100 w-80">
+                    <figure class="px-10 pt-10 flex flex-col relative overflow-visible">
+                      <img
+                        src="images/image-waffle-desktop.jpg"
+                        alt="Shoes"
+                        class="rounded-xl" />
+                        <div class="card-actions absolute bottom-[-20px]">
+                            <button class="btn rounded-full hover:bg-orange-700 hover: border-none"><span id="buy-now-btn" class="flex flex-row items-center gap-2"><img src="images/icon-add-to-cart.svg" alt="">Add to cart</span></button>
+                        </div>
+                    </figure>
+                    <div class="card-body items-left text-left">
+                      <h6 class="card-title text-orange-300 text-sm">Waffle</h6>
+                      <p class="font-bold">Waffle with berries</p>
+                      <p class="text-orange-400 font-bold text-sm">$6.50</p>
+                      
+                    </div>
+                  </div>
+                <div class="card bg-base-100 w-80">
+                    <figure class="px-10 pt-10 flex flex-col relative overflow-visible">
+                      <img
+                        src="images/image-creme-brulee-desktop.jpg"
+                        alt="Shoes"
+                        class="rounded-xl" />
+                        <div class="card-actions absolute bottom-[-20px]">
+                            <button class="btn rounded-full hover:bg-orange-700 hover: border-none"><span id="buy-now-btn" class="flex flex-row items-center gap-2"><img src="images/icon-add-to-cart.svg" alt="">Add to cart</span></button>
+                        </div>
+                    </figure>
+                    <div class="card-body items-left text-left">
+                      <h6 class="card-title text-orange-300 text-sm">Creme Brulee</h6>
+                      <p class="font-bold">Vanilla Creme Brulee</p>
+                      <p class="text-orange-400 font-bold text-sm">$7.00</p>
+                      
+                    </div>
+                  </div>
+                <div class="card bg-base-100 w-80">
+                    <figure class="px-10 pt-10 flex flex-col relative overflow-visible">
+                      <img
+                        src="images/image-macaron-desktop.jpg"
+                        alt="Shoes"
+                        class="rounded-xl" />
+                        <div class="card-actions absolute bottom-[-20px]">
+                            <button class="btn rounded-full hover:bg-orange-700 hover: border-none"><span id="buy-now-btn" class="flex flex-row items-center gap-2"><img src="images/icon-add-to-cart.svg" alt="">Add to cart</span></button>
+                        </div>
+                    </figure>
+                    <div class="card-body items-left text-left">
+                      <h6 class="card-title text-orange-300 text-sm">Macaron</h6>
+                      <p class="font-bold">Macaron Mix Of Five</p>
+                      <p class="text-orange-400 font-bold text-sm">$8.00</p>
+                      
+                    </div>
+                  </div>
+                <div class="card bg-base-100 w-80">
+                    <figure class="px-10 pt-10 flex flex-col relative overflow-visible">
+                      <img
+                        src="images/image-tiramisu-desktop.jpg"
+                        alt="Shoes"
+                        class="rounded-xl" />
+                        <div class="card-actions absolute bottom-[-20px]">
+                            <button class="btn rounded-full hover:bg-orange-700 hover: border-none"><span id="buy-now-btn" class="flex flex-row items-center gap-2"><img src="images/icon-add-to-cart.svg" alt="">Add to cart</span></button>
+                        </div>
+                    </figure>
+                    <div class="card-body items-left text-left">
+                      <h6 class="card-title text-orange-300 text-sm">Tiramisu</h6>
+                      <p class="font-bold">Tiramisu Classic</p>
+                      <p class="text-orange-400 font-bold text-sm">$5.50</p>
+                      
+                    </div>
+                  </div>
+                <div class="card bg-base-100 w-80">
+                    <figure class="px-10 pt-10 flex flex-col relative overflow-visible">
+                      <img
+                        src="images/image-baklava-desktop.jpg"
+                        alt="Shoes"
+                        class="rounded-xl" />
+                        <div class="card-actions absolute bottom-[-20px]">
+                            <button class="btn rounded-full hover:bg-orange-700 hover: border-none"><span id="buy-now-btn" class="flex flex-row items-center gap-2"><img src="images/icon-add-to-cart.svg" alt="">Add to cart</span></button>
+                        </div>
+                    </figure>
+                    <div class="card-body items-left text-left">
+                      <h6 class="card-title text-orange-300 text-sm">Baklava</h6>
+                      <p class="font-bold">Pistachio Baklava</p>
+                      <p class="text-orange-400 font-bold text-sm">$4.00</p>
+                      
+                    </div>
+                  </div>
+                <div class="card bg-base-100 w-80">
+                    <figure class="px-10 pt-10 flex flex-col relative overflow-visible">
+                      <img
+                        src="images/image-waffle-desktop.jpg"
+                        alt="Shoes"
+                        class="rounded-xl" />
+                        <div class="card-actions absolute bottom-[-20px]">
+                            <button class="btn rounded-full hover:bg-orange-700 hover: border-none"><span id="buy-now-btn" class="flex flex-row items-center gap-2"><img src="images/icon-add-to-cart.svg" alt="">Add to cart</span></button>
+                        </div>
+                    </figure>
+                    <div class="card-body items-left text-left">
+                      <h6 class="card-title text-orange-300 text-sm">Pie</h6>
+                      <p class="font-bold">Lemon Meringue Pie</p>
+                      <p class="text-orange-400 font-bold text-sm">$5.00</p>
+                      
+                    </div>
+                  </div>
+                <div class="card bg-base-100 w-80">
+                    <figure class="px-10 pt-10 flex flex-col relative overflow-visible">
+                      <img
+                        src="images/image-cake-desktop.jpg"
+                        alt="Shoes"
+                        class="rounded-xl" />
+                        <div class="card-actions absolute bottom-[-20px]">
+                            <button class="btn rounded-full hover:bg-orange-700 hover: border-none"><span id="buy-now-btn" class="flex flex-row items-center gap-2"><img src="images/icon-add-to-cart.svg" alt="">Add to cart</span></button>
+                        </div>
+                    </figure>
+                    <div class="card-body items-left text-left">
+                      <h6 class="card-title text-orange-300 text-sm">Cake</h6>
+                      <p class="font-bold">Red Velvet Cake</p>
+                      <p class="text-orange-400 font-bold text-sm">$4.50</p>
+                      
+                    </div>
+                  </div>
+                <div class="card bg-base-100 w-80">
+                    <figure class="px-10 pt-10 flex flex-col relative overflow-visible">
+                      <img
+                        src="images/image-brownie-desktop.jpg"
+                        alt="Shoes"
+                        class="rounded-xl" />
+                        <div class="card-actions absolute bottom-[-20px]">
+                            <button class="btn rounded-full hover:bg-orange-700 hover: border-none"><span id="buy-now-btn" class="flex flex-row items-center gap-2"><img src="images/icon-add-to-cart.svg" alt="">Add to cart</span></button>
+                        </div>
+                    </figure>
+                    <div class="card-body items-left text-left">
+                      <h6 class="card-title text-orange-300 text-sm">Brownie</h6>
+                      <p class="font-bold">Salted Caramel Brownie</p>
+                      <p class="text-orange-400 font-bold text-sm">$5.50</p>
+                      
+                    </div>
+                  </div>
+                <div class="card bg-base-100 w-80">
+                    <figure class="px-10 pt-10 flex flex-col relative overflow-visible">
+                      <img
+                        src="images/image-waffle-desktop.jpg"
+                        alt="Shoes"
+                        class="rounded-xl" />
+                        <div class="card-actions absolute bottom-[-20px]">
+                            <button class="btn rounded-full hover:bg-orange-700 hover: border-none"><span id="buy-now-btn" class="flex flex-row items-center gap-2"><img src="images/icon-add-to-cart.svg" alt="">Add to cart</span></button>
+                        </div>
+                    </figure>
+                    <div class="card-body items-left text-left">
+                      <h6 class="card-title text-orange-300 text-sm">Panna Cotta</h6>
+                      <p class="font-bold">Vanilla Panna Cotta</p>
+                      <p class="text-orange-400 font-bold text-sm">$6.50</p>
+                      
+                    </div>
+                  </div>
+            </div>
+        </section>
+
+        <!-- Shopping Cart Section -->
+        <section class="shopping-cart">
+            <div class="no-product-cart">
+                <h3 class="text-lg red-hat-text-bold text-orange-700">Your Cart(0)</h3>
+                <img class="w-[200px]" src="images/illustration-empty-cart.svg" alt="">
+                <p class="red-hat-text-semibold text-amber-950">Your added items will appear here</p>
+            </div>
+        </section>
+    </main>
 </body>
+
 </html>
